@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+	<title>Algoritma</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+     <div class="nama">
+         <!-- MEMBUAT JUDUL ALGRITMA -->
+        <h1><b>Menghitung Keliling dan Luas Lingkaran</b></h1>
+        <!-- MEMBUAT IDENTITAS -->
+         <b>NAMA   : ERA DWI WULANDARI <br>
+            KODE   : 030 <br>
+            TUGAS  : SESI 4 <br> <br> <br>
+        <!-- MEMBUAT IDENTITAS END -->
+    </div>
+       
+    <!-- MEMBUAT INPUT -->
+    <div class="container">
+        <input id="radius" type="text" placeholder="Masukkan Nilai Jari-Jari(cm)"> <br> <br> <br> 
+        <button id="hitung" onclick="hitung()">Hitung</button>
+        <input id="reset" type="button" value="Reset" onclick="Reset()"/> <br> <br>
+        <div class="Hasil">
+         Hasil: <span id="luas"></span> <br> <br>
+         Hasil: <span id="keliling"></span>
+    </div>   
+        </div>
+    <!-- MEMBUAT INPUT END -->
+
+
+    <!-- LANGKAH KALKULASI -->
+    <script>
+    //    MENGHITUNG LUAS DAN KELILING LINGKARAN
+    function hitung (){
+    // MENDAPATKAN NILAI JARI-JARI DARI INPUT
+    var radius = document.getElementById("radius").value;
+    // MENGHITUNG LUAS LINGKARAN
+    var luas = Math.PI * Math.pow(radius, 2);
+    // MENGHITUNG KELILING LINGKARAN
+    var keliling = 2 * Math.PI * radius;
+    // MENAMPILKAN OUTPUT PADA INPUT
+    document.getElementById("luas").innerHTML = luas;
+    document.getElementById("keliling").innerHTML = keliling;
+    }
+    // MEMBUAT FUNCTION RESET
+    function Reset(){
+    document.getElementById("radius").value="0"
+    document.getElementById("luas").innerHTML = "0";
+    document.getElementById("keliling").innerHTML = "0";
+    }
+    </script>
+    <!-- LANGKAH KALKULASI END -->
+</body>
+</html>
+			
+			
+
+
