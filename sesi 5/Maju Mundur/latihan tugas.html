@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Latihan Maju Mundur</title>
+    </head>
+    <body>
+        <h1>Latihan Maju Mundur</h1>
+        <button onclick="maju()">Maju</button>
+        <button onclick="mundur()">Mundur</button>
+        <div id="hasil"></div>
+
+
+
+        <script>
+        var nilai = 0;
+
+        //    maju
+            function maju(){
+                nilai = nilai + 1;
+                document.getElementById("hasil").innerHTML = nilai;
+            }
+        //    mundur
+            function mundur (){
+                nilai = nilai - 1;
+                document.getElementById("hasil").innerHTML = nilai;
+            }
+
+            
+
+
+        </script>
+    </body>
+</html>

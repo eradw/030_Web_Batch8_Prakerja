@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Belajar REGEX</title>
+    </head>
+    <body>
+        <h1>Belajar REGEX</h1>
+        <script>
+            // STEP 1
+            // var foo = /ab+c/;
+
+            // console.log(foo); // /ab+c/
+            // console.log(typeof foo); // object
+
+            // var bar = new RegExp("ab+c");
+
+            // console.log(bar); ///ab+c/
+            // console.log(typeof bar); // object
+
+            // STEP 2
+            // var foo = "Belajar JavaScript";
+            // var pola = /JavaScript/
+
+            // console.log(pola.test(foo)); //true
+            // console.log(/Belajar/.test(foo)); //true
+            // console.log(/belajar/.test(foo)); //false
+
+            // STEP 3
+            // var foo = "1 Jam sama dengan 60 menit, juga sama dengan 3600 detik";
+            // var pola = /\d+/;
+
+            // console.log(pola.exec(foo)) //Array ["1"]
+
+            // STEP 4
+            var foo = "Belajar JavaScript";
+
+            console.log(/JavaScript/.test(foo)); //true
+            console.log(/javascript/.test(foo)); //false
+            console.log(/Belajar/.test(foo)); //true
+            console.log(/belajar/.test(foo)); //false
+            console.log(/Java/.test(foo)); //true
+            console.log(/ajar/.test(foo)); //true
+        </script>
+    </body>
+</html>

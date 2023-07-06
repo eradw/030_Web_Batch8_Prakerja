@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Hitung Grade</title>
+        <link rel="stylesheet" href="mandiri grade.css">
+    </head>
+
+    <body>
+        <label>Nilai</label><input id="nilai" type="number">
+        <button onclick="cekGrade()">Cek Grade</button>
+        <p id="hasil"></p>
+
+        <script>
+
+        function cekGrade() {
+            // Mendapatkan nilai dari input
+            var nilai = document.getElementById("nilai").value;
+        
+            // Menghitung grade berdasarkan nilai
+            var grade;
+            if (nilai >= 90) {
+                grade = "A";
+            } else if (nilai >= 80) {
+                grade = "B";
+            } else if (nilai >= 70) {
+                grade = "C";
+            } else if (nilai >= 60) {
+                grade = "D";
+            } else {
+                grade = "E";
+            }
+
+            // Menampilkan grade
+            document.getElementById("hasil").innerHTML = grade;
+        }
+        </script>
+    </body>
+</html>
